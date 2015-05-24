@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6BA361D1B126B0100E655F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA361C1B126B0100E655F2 /* AppDelegate.swift */; };
+		A6BA36201B126B0100E655F2 /* swift_animation_rotate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6BA361E1B126B0100E655F2 /* swift_animation_rotate.xcdatamodeld */; };
+		A6BA36221B126B0100E655F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA36211B126B0100E655F2 /* ViewController.swift */; };
+		A6BA36251B126B0100E655F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BA36231B126B0100E655F2 /* Main.storyboard */; };
+		A6BA36271B126B0100E655F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BA36261B126B0100E655F2 /* Images.xcassets */; };
+		A6BA362A1B126B0100E655F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BA36281B126B0100E655F2 /* LaunchScreen.xib */; };
+		A6BA36361B126B0200E655F2 /* swift_animation_rotateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BA36351B126B0200E655F2 /* swift_animation_rotateTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6BA36301B126B0200E655F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6BA360F1B126B0100E655F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6BA36161B126B0100E655F2;
+			remoteInfo = "swift-animation-rotate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6BA36171B126B0100E655F2 /* swift-animation-rotate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-animation-rotate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BA361B1B126B0100E655F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BA361C1B126B0100E655F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6BA361F1B126B0100E655F2 /* swift_animation_rotate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swift_animation_rotate.xcdatamodel; sourceTree = "<group>"; };
+		A6BA36211B126B0100E655F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6BA36241B126B0100E655F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6BA36261B126B0100E655F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6BA36291B126B0100E655F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A6BA362F1B126B0200E655F2 /* swift-animation-rotateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-animation-rotateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BA36341B126B0200E655F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BA36351B126B0200E655F2 /* swift_animation_rotateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_animation_rotateTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6BA36141B126B0100E655F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA362C1B126B0200E655F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6BA360E1B126B0100E655F2 = {
+			isa = PBXGroup;
+			children = (
+				A6BA36191B126B0100E655F2 /* swift-animation-rotate */,
+				A6BA36321B126B0200E655F2 /* swift-animation-rotateTests */,
+				A6BA36181B126B0100E655F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6BA36181B126B0100E655F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA36171B126B0100E655F2 /* swift-animation-rotate.app */,
+				A6BA362F1B126B0200E655F2 /* swift-animation-rotateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6BA36191B126B0100E655F2 /* swift-animation-rotate */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA361C1B126B0100E655F2 /* AppDelegate.swift */,
+				A6BA36211B126B0100E655F2 /* ViewController.swift */,
+				A6BA36231B126B0100E655F2 /* Main.storyboard */,
+				A6BA36261B126B0100E655F2 /* Images.xcassets */,
+				A6BA36281B126B0100E655F2 /* LaunchScreen.xib */,
+				A6BA361E1B126B0100E655F2 /* swift_animation_rotate.xcdatamodeld */,
+				A6BA361A1B126B0100E655F2 /* Supporting Files */,
+			);
+			path = "swift-animation-rotate";
+			sourceTree = "<group>";
+		};
+		A6BA361A1B126B0100E655F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA361B1B126B0100E655F2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6BA36321B126B0200E655F2 /* swift-animation-rotateTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA36351B126B0200E655F2 /* swift_animation_rotateTests.swift */,
+				A6BA36331B126B0200E655F2 /* Supporting Files */,
+			);
+			path = "swift-animation-rotateTests";
+			sourceTree = "<group>";
+		};
+		A6BA36331B126B0200E655F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA36341B126B0200E655F2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6BA36161B126B0100E655F2 /* swift-animation-rotate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BA36391B126B0200E655F2 /* Build configuration list for PBXNativeTarget "swift-animation-rotate" */;
+			buildPhases = (
+				A6BA36131B126B0100E655F2 /* Sources */,
+				A6BA36141B126B0100E655F2 /* Frameworks */,
+				A6BA36151B126B0100E655F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-animation-rotate";
+			productName = "swift-animation-rotate";
+			productReference = A6BA36171B126B0100E655F2 /* swift-animation-rotate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6BA362E1B126B0200E655F2 /* swift-animation-rotateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BA363C1B126B0200E655F2 /* Build configuration list for PBXNativeTarget "swift-animation-rotateTests" */;
+			buildPhases = (
+				A6BA362B1B126B0200E655F2 /* Sources */,
+				A6BA362C1B126B0200E655F2 /* Frameworks */,
+				A6BA362D1B126B0200E655F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6BA36311B126B0200E655F2 /* PBXTargetDependency */,
+			);
+			name = "swift-animation-rotateTests";
+			productName = "swift-animation-rotateTests";
+			productReference = A6BA362F1B126B0200E655F2 /* swift-animation-rotateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6BA360F1B126B0100E655F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "hiro nagami";
+				TargetAttributes = {
+					A6BA36161B126B0100E655F2 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A6BA362E1B126B0200E655F2 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = A6BA36161B126B0100E655F2;
+					};
+				};
+			};
+			buildConfigurationList = A6BA36121B126B0100E655F2 /* Build configuration list for PBXProject "swift-animation-rotate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6BA360E1B126B0100E655F2;
+			productRefGroup = A6BA36181B126B0100E655F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6BA36161B126B0100E655F2 /* swift-animation-rotate */,
+				A6BA362E1B126B0200E655F2 /* swift-animation-rotateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6BA36151B126B0100E655F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA36251B126B0100E655F2 /* Main.storyboard in Resources */,
+				A6BA362A1B126B0100E655F2 /* LaunchScreen.xib in Resources */,
+				A6BA36271B126B0100E655F2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA362D1B126B0200E655F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6BA36131B126B0100E655F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA36221B126B0100E655F2 /* ViewController.swift in Sources */,
+				A6BA361D1B126B0100E655F2 /* AppDelegate.swift in Sources */,
+				A6BA36201B126B0100E655F2 /* swift_animation_rotate.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BA362B1B126B0200E655F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BA36361B126B0200E655F2 /* swift_animation_rotateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6BA36311B126B0200E655F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6BA36161B126B0100E655F2 /* swift-animation-rotate */;
+			targetProxy = A6BA36301B126B0200E655F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6BA36231B126B0100E655F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6BA36241B126B0100E655F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6BA36281B126B0100E655F2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6BA36291B126B0100E655F2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6BA36371B126B0200E655F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6BA36381B126B0200E655F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6BA363A1B126B0200E655F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift-animation-rotate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6BA363B1B126B0200E655F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "swift-animation-rotate/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A6BA363D1B126B0200E655F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "swift-animation-rotateTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-animation-rotate.app/swift-animation-rotate";
+			};
+			name = Debug;
+		};
+		A6BA363E1B126B0200E655F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "swift-animation-rotateTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-animation-rotate.app/swift-animation-rotate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6BA36121B126B0100E655F2 /* Build configuration list for PBXProject "swift-animation-rotate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BA36371B126B0200E655F2 /* Debug */,
+				A6BA36381B126B0200E655F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BA36391B126B0200E655F2 /* Build configuration list for PBXNativeTarget "swift-animation-rotate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BA363A1B126B0200E655F2 /* Debug */,
+				A6BA363B1B126B0200E655F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A6BA363C1B126B0200E655F2 /* Build configuration list for PBXNativeTarget "swift-animation-rotateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BA363D1B126B0200E655F2 /* Debug */,
+				A6BA363E1B126B0200E655F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6BA361E1B126B0100E655F2 /* swift_animation_rotate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6BA361F1B126B0100E655F2 /* swift_animation_rotate.xcdatamodel */,
+			);
+			currentVersion = A6BA361F1B126B0100E655F2 /* swift_animation_rotate.xcdatamodel */;
+			path = swift_animation_rotate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6BA360F1B126B0100E655F2 /* Project object */;
+}
