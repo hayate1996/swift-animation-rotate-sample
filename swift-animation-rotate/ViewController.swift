@@ -193,9 +193,9 @@ class ViewController: UIViewController {
     {
         if let _animationView = animationView {
             var viewCenter = _animationView.center
+            _animationView.frame.origin.x = 0
             UIView.animateWithDuration(1.0, animations: { () -> Void in
-                _animationView.frame.origin.x = 0
-                _animationView.frame.origin.y = 0
+                _animationView.frame.origin.x = self.view.frame.width - _animationView.frame.width
                 }) { (isTrue) -> Void in
                     self.configureAnimationView()
             }
