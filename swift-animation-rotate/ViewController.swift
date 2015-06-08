@@ -96,11 +96,12 @@ class ViewController: UIViewController {
         UIView.animateWithDuration(1.0, animations: { () -> Void in
             
             // 180度回転するtransformの生成
-            var degree      = self.DegreesToRadians(180.0)
-            var transform   = CGAffineTransformMakeRotation(degree)
+            // * 回転角度(radian)を生成する関数(120度の場合): self.DegreesToRadians(120)
+            // * RotateTransformの生成: CGAffineTransformMakeRotation(radian)
+            
             
             // animationViewにtransformを設定
-            self.animationView.transform = transform
+            
             
         }){ (isTrue) -> Void in
             
