@@ -9,57 +9,44 @@
 import UIKit
 
 
-
-
 class ViewController: UIViewController {
     
-    var rotateButton: UIButton!
+    //------------- 初期化 ------------//
     
+    // ビュー
+    var rotateButton: UIButton!
     var buttonsAreaView: UIView!
     var animationAreaView: UIView?
     var animationView: UIView?
     
+    // 各ビューのサイズ
     static let screenSizeWidth: CGFloat = UIScreen.mainScreen().bounds.width
-    
     let animationAreaWidth: CGFloat = ViewController.screenSizeWidth
     let animationAreaHeight: CGFloat = 300
-    
-    let buttonsAreaOriginY: CGFloat = 302
-    let buttonsAreaWidth: CGFloat = ViewController.screenSizeWidth
-    let buttonsAreaHeight: CGFloat = 300
-    
-    let buttonWidth: CGFloat = (ViewController.screenSizeWidth - 6) / 2
+    let buttonWidth: CGFloat = 150
     let buttonHeight: CGFloat = 70
-    
     let animationViewTag = 200
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        configureButtons()
         configureAnimationView()
+        configureButtons()
     }
     
-    func DegreesToRadians(var x:Double) -> Double
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // 回転角度 (degree)
+    func DegreesToRadians(var degree:Double) -> Double
     {
-        return x * M_PI / 180.0
+        return degree * M_PI / 180.0
     }
     
-    func configureButtons()
-    {
-        rotateButton = UIButton(frame: CGRectMake(2, 2, buttonsAreaWidth, buttonsAreaHeight))
-        rotateButton.backgroundColor = .lightGrayColor()
-        rotateButton.setTitle("Rotate", forState: .Normal)
-        rotateButton.addTarget(self, action: Selector("rotateAction"), forControlEvents: UIControlEvents.TouchUpInside)
-        
-        buttonsAreaView = UIView(frame: CGRectMake(0, buttonsAreaOriginY, buttonsAreaWidth, buttonsAreaHeight))
-        
-        buttonsAreaView.addSubview(rotateButton)
-        
-        view.addSubview(buttonsAreaView)
-    }
-    
+    // アニメーションエリアの初期化
     func configureAnimationView()
     {
         if let _animationAreaView = animationAreaView {
@@ -68,18 +55,28 @@ class ViewController: UIViewController {
             _animationAreaView.addSubview(animationView!)
         }
         else {
-            animationAreaView = UIView(frame: CGRectMake(0, 0, animationAreaWidth, animationAreaHeight))
-            animationAreaView!.layer.borderColor = UIColor.greenColor().CGColor
-            animationAreaView!.layer.borderWidth = 1
+            animationAreaView = UIView(frame: CGRectMake(0, 100, animationAreaWidth, animationAreaHeight))
             
             animationView = makeAnimationView()
-            
             animationAreaView!.addSubview(animationView!)
             
             view.addSubview(animationAreaView!)
         }
     }
     
+    // ボタンの配置
+    func configureButtons()
+    {
+        rotateButton = UIButton(frame: CGRectMake(0, 0, buttonWidth, buttonHeight))
+        rotateButton.backgroundColor = .lightGrayColor()
+        rotateButton.setTitle("Rotate", forState: .Normal)
+        rotateButton.addTarget(self, action: Selector("rotateAction"), forControlEvents: UIControlEvents.TouchUpInside)
+        rotateButton.center = CGPointMake(self.view.center.x, animationAreaView!.frame.maxY + 50)
+        
+        view.addSubview(rotateButton)
+    }
+    
+    // アニメーションするビューの生成
     func makeAnimationView() -> UIView! {
         var animationView = UIView(frame: CGRectMake(0, 0, 100, 100))
         animationView.backgroundColor = UIColor.blueColor()
@@ -88,6 +85,12 @@ class ViewController: UIViewController {
         return animationView
     }
     
+    
+    
+    
+    //------------- アニメーション ------------//
+    
+    // 回転
     func rotateAction()
     {
         if let _animationView = animationView {
@@ -100,9 +103,7 @@ class ViewController: UIViewController {
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    //--------------------------------------//
+
 }
