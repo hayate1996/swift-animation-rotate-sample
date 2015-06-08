@@ -41,9 +41,9 @@ class ViewController: UIViewController {
     }
     
     // 回転角度 (degree)
-    func DegreesToRadians(var degree:Double) -> Double
+    func DegreesToRadians(var degree:Double) -> CGFloat
     {
-        return degree * M_PI / 180.0
+        return CGFloat(degree * M_PI / 180.0)
     }
     
     // アニメーションエリアの初期化
@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         UIView.animateWithDuration(1.0, animations: { () -> Void in
             
             // 180度回転するtransformの生成
-            var degree      = CGFloat(self.DegreesToRadians(180.0))
+            var degree      = self.DegreesToRadians(180.0)
             var transform   = CGAffineTransformMakeRotation(degree)
             
             // animationViewにtransformを設定
