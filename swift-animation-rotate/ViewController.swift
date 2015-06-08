@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var rotateButton: UIButton!
     var buttonsAreaView: UIView!
     var animationAreaView: UIView?
-    var animationView: UIView?
+    var animationView: UIView!
     
     // 各ビューのサイズ
     static let screenSizeWidth: CGFloat = UIScreen.mainScreen().bounds.width
@@ -93,16 +93,21 @@ class ViewController: UIViewController {
     // 回転
     func rotateAction()
     {
-        if let _animationView = animationView {
-            var viewCenter = _animationView.center
-            UIView.animateWithDuration(1.0, animations: { () -> Void in
-                _animationView.transform = CGAffineTransformMakeRotation(CGFloat(self.DegreesToRadians(180.0)))
-                }){ (isTrue) -> Void in
-                    self.configureAnimationView()
-            }
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+            
+            // 180度回転するtransformの生成
+            var degree      = CGFloat(self.DegreesToRadians(180.0))
+            var transform   = CGAffineTransformMakeRotation(degree)
+            
+            // animationViewにtransformを設定
+            self.animationView.transform = transform
+            
+        }){ (isTrue) -> Void in
+            
+            // animationViewを初期化
+            self.configureAnimationView()
         }
     }
-    
     
     //--------------------------------------//
 
